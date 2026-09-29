@@ -1,0 +1,116 @@
+[data-md-color-scheme="slate"] {
+    --md-code-hl-color: hsla(163, 34%, 67%, 0.5);
+    --md-code-hl-number-color: #0aa370;
+    --md-code-hl-special-color: #73a0d3;
+    --md-code-hl-function-color: #7eb6f6;
+    --md-code-hl-constant-color: #abb9cb;
+    --md-code-hl-keyword-color: #47ebb4;
+    --md-code-hl-string-color: #7eb6f6;
+    --md-code-hl-name-color: var(--md-code-fg-color);
+    --md-code-hl-operator-color: #47ebb4;
+    --md-code-hl-punctuation-color: #abb9cb;
+    --md-code-hl-comment-color: #abb9cb;
+    --md-code-hl-generic-color: var(--md-default-fg-color--light);
+    --md-code-hl-variable-color: #7eb6f6;
+}
+
+[data-md-color-scheme="default"] {
+    --md-code-hl-color: hsla(163, 40%, 50%, 0.3);
+    --md-code-hl-number-color: #087f56;
+    --md-code-hl-special-color: #4a78a8;
+    --md-code-hl-function-color: #3a7fc9;
+    --md-code-hl-constant-color: #6b7a8a;
+    --md-code-hl-keyword-color: #0e9e72;
+    --md-code-hl-string-color: #3a7fc9;
+    --md-code-hl-name-color: var(--md-code-fg-color);
+    --md-code-hl-operator-color: #0e9e72;
+    --md-code-hl-punctuation-color: #5a6a7a;
+    --md-code-hl-comment-color: #7a8a9a;
+    --md-code-hl-generic-color: var(--md-default-fg-color--light);
+    --md-code-hl-variable-color: #3a7fc9;
+}
+
+.md-grid {
+    max-width: min(200ch, 98%);
+    transition: max-width 0.3s ease;
+}
+
+[data-md-width="wide"] .md-grid {
+    max-width: min(270ch, 98%);
+}
+
+[data-md-width="full"] .md-grid {
+    max-width: 98%;
+}
+
+.md-header__button.md-width-toggle {
+    cursor: pointer;
+    margin-left: 0.2rem;
+}
+
+.md-header__button.md-width-toggle svg {
+    fill: currentcolor;
+    display: block;
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+.md-nav__version-range {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+}
+
+/* Hide width toggle on smaller screens where it doesn't make a difference */
+@media (max-width: 76.25em) {
+    .md-header__button.md-width-toggle {
+        display: none;
+    }
+}
+
+.md-typeset .grid.codeblock-and-diagram {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+}
+
+/* Center the diagram horizontally within its 50% column */
+.md-typeset .grid.codeblock-and-diagram > .mermaid {
+  justify-self: center;
+}
+
+.md-typeset .grid.codeblock-and-image {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.md-typeset .grid.codeblock-and-image > .codeblock-and-image__code {
+  flex: 1 1 20rem;
+  min-width: 0;
+}
+
+.md-typeset .grid.codeblock-and-image .codeblock-and-image__code > :first-child,
+.md-typeset .grid.codeblock-and-image .codeblock-and-image__code > .highlight:first-child > :first-child {
+  margin-top: 0;
+}
+
+.md-typeset .grid.codeblock-and-image > .codeblock-and-image__images {
+  display: grid;
+  gap: 0.5rem;
+  justify-items: end;
+  flex: 0 0 auto;
+  margin-left: auto;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.md-typeset .grid.codeblock-and-image .codeblock-and-image__images > p {
+  margin: 0;
+}
+
+.md-typeset .grid.codeblock-and-image .codeblock-and-image__images img {
+  display: block;
+  width: auto;
+  max-width: none;
+  height: auto;
+  image-rendering: pixelated;
+}

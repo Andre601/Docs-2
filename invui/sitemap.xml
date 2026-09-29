@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+      <url>
+        <loc>https://xenondevs.xyz/docs/invui/</loc>
+      </url>
+      <url>
+        <loc>https://xenondevs.xyz/docs/invui/faq/</loc>
+      </url>
+      <url>
+        <loc>https://xenondevs.xyz/docs/invui/gui/</loc>
+      </url>
+      <url>
+        <loc>https://xenondevs.xyz/docs/invui/inventory/</loc>
+      </url>
+      <url>
+        <loc>https://xenondevs.xyz/docs/invui/item/</loc>
+      </url>
+      <url>
+        <loc>https://xenondevs.xyz/docs/invui/localization/</loc>
+      </url>
+      <url>
+        <loc>https://xenondevs.xyz/docs/invui/overview/</loc>
+      </url>
+      <url>
+        <loc>https://xenondevs.xyz/docs/invui/reactive-menus/</loc>
+      </url>
+      <url>
+        <loc>https://xenondevs.xyz/docs/invui/window/</loc>
+      </url>
+</urlset>
